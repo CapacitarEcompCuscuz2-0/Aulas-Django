@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h1>Todos os posts</h1>
+        {% for post in posts %}
+            <h3><b>{{ post.title }}</b></h3>
+            <p>Autor: {{ post.author }}</p>
+            <p>Data: {{ post.date }}</p>
+            <br>
+        {% endfor %}
+    </body>
+</html>

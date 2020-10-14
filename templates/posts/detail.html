@@ -1,0 +1,12 @@
+<html>
+    <body>
+        {% if post %}
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.author }}</p>
+            <p>{{ post.date }}</p>
+            <p>{{ post.text }}</p>
+        {% else %}
+            <h2>Não há post com essa identificação.</h2>
+        {% endif %}
+    </body>
+</html>
